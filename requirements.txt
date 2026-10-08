@@ -1,0 +1,9 @@
+# Phase 1 (discovery) — runnable with just requests
+requests>=2.31
+
+# Phase 2 (watcher Lambda) — async fan-out fetch
+aiohttp>=3.9
+certifi>=2024.2          # CA bundle for aiohttp TLS (esp. macOS dev)
+# email uses stdlib smtplib (Gmail SMTP) — no third-party dep
+# boto3 is provided by the Lambda runtime; pin here only for local dev
+boto3>=1.34

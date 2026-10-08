@@ -1,0 +1,24 @@
+# Secrets / env
+.env
+.env.*
+
+# Build artifacts
+package/
+*.zip
+*.zip.bak
+
+# Local state + runtime data
+state.local.json
+state*.json
+discovery/checkpoint.json
+discovery/*.log
+discovery/*review*.csv
+discovery/*excluded*.csv
+discovery/*promoted*.txt
+discovery/unresolved.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
